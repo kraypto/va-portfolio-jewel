@@ -327,7 +327,7 @@ export default function Portfolio() {
                       href="#contact"
                       className="inline-flex items-center gap-1.5 text-xs text-slate-700 hover:text-slate-950 font-bold font-mono uppercase tracking-wider group-hover:translate-x-0.5 transition-transform shrink-0"
                     >
-                      Inquire SOP
+                      Enquire SOP
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -337,19 +337,7 @@ export default function Portfolio() {
           </AnimatePresence>
         </div>
 
-        {/* Small highlight footer CTA */}
-        <div className="text-center mt-12 bg-white border border-slate-200 rounded-3xl p-6 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-slate-600 text-left max-w-xl leading-relaxed">
-            These templates demonstrate my ability to translate complex schedules and business data into orderly, safe, and productive operations. Need this caliber of custom auditing, proactive inbox triage, and seamless bookings for your team?
-          </p>
-          <a
-            href="#contact"
-            className="bg-teal-600 hover:bg-teal-500 text-white font-display text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-xl transition-all shadow-md hover:shadow-teal-950/20 shrink-0 block text-center"
-            id="portfolio-cta-anchor"
-          >
-            Request Custom Setup
-          </a>
-        </div>
+
 
       </div>
     </section>
