@@ -1,0 +1,6 @@
+{
+  "name": "Virtual Assistant Portfolio",
+  "description": "A high-converting, modern, and professional portfolio website for an elite administrative, data, and customer support Virtual Assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
