@@ -56,7 +56,7 @@ export default function Contact() {
     setIsSubmitting(true);
     setSubmitError(null);
 
-    // Using Web3Forms public API to deliver submissions directly to target email: jancodrey.delosreyes@gmail.com
+    // Using Web3Forms public API to deliver submissions directly to target email: santiagojewelm@gmail.com
     // Fallback key: '8c13f639-6e3e-43f0-bb53-6ecba592df87' (or direct configuration instructions)
     const accessKey = (import.meta as any).env.VITE_WEB3FORMS_KEY || '8c13f639-6e3e-43f0-bb53-6ecba592df87';
 
