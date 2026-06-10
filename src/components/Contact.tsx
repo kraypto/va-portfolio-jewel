@@ -208,7 +208,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-slate-900">Direct Business Email</h4>
-                      <p className="text-[10px] text-teal-600 select-all group-hover:text-teal-700 transition-colors">santiagojewelm@gmail.com</p>
+                      <p className="text-[10px] text-teal-600 select-all group-hover:text-teal-700 transition-colors">jancodrey.delosreyes@gmail.com</p>
                     </div>
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-450 group-hover:text-teal-600 transition-colors" />

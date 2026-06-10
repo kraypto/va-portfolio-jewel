@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Download, Shield, Briefcase, Lock } from 'lucide-react';
+import { ArrowRight, Download, Shield, Briefcase, Lock, Heart, Users, Settings, Share2 } from 'lucide-react';
 
 interface HeroProps {
   onScrollToSection: (sectionId: string) => void;
@@ -30,14 +30,14 @@ export default function Hero({ onScrollToSection, onDownloadResume }: HeroProps)
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
           
-          {/* Bento Card 1: Headline and Copy (Full Width) */}
+          {/* Bento Card 1: Headline and Copy (Col Span 7) */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="bg-slate-900 text-white rounded-3xl p-8 sm:p-10 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col justify-between"
+            className="lg:col-span-7 bg-slate-900 text-white rounded-3xl p-8 sm:p-10 border border-slate-800 shadow-xl relative overflow-hidden flex flex-col justify-between"
             id="hero-copy-container"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-teal-500/10 rounded-full -mr-16 -mt-16 blur-2xl pointer-events-none" />
@@ -143,6 +143,100 @@ export default function Hero({ onScrollToSection, onDownloadResume }: HeroProps)
               </motion.div>
             </div>
 
+          </motion.div>
+
+          {/* Bento Card 2: VA Specialties (Col Span 5) */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="lg:col-span-5 relative flex flex-col"
+            id="hero-blueprint-container"
+          >
+            {/* Elegant outline card */}
+            <div className="relative bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-xl p-6 sm:p-7 flex flex-col justify-between h-full">
+              
+              <div>
+                {/* Visual Header */}
+                <div className="flex items-center justify-between pb-4 border-b border-white/5 mb-5">
+                  <div className="flex items-center gap-1.5">
+                    <div className="w-2.5 h-2.5 rounded-full bg-slate-800" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-slate-800" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-slate-800" />
+                  </div>
+                  <div className="text-[10px] font-mono text-slate-400 tracking-widest uppercase">
+                    va_specialties_guide.json
+                  </div>
+                </div>
+
+                {/* Operations Spotlight */}
+                <div className="space-y-4">
+                  <div className="space-y-1">
+                    <h3 className="text-sm font-display font-medium text-slate-100 uppercase tracking-widest">
+                      Niche Target Roles
+                    </h3>
+                    <p className="text-[11px] text-slate-400 leading-normal">
+                      Providing dynamic, certified compliance, and administrative excellence across dedicated domains:
+                    </p>
+                  </div>
+
+                  {/* Specialty indicators */}
+                  <div className="space-y-2.5 pt-1">
+                    {/* Specialty 1: Healthcare / Medical VA */}
+                    <div className="bg-slate-950/40 border border-slate-800/60 p-2.5 rounded-2xl flex items-start gap-3">
+                      <div className="p-1.5 bg-teal-500/10 rounded-lg text-teal-400 shrink-0">
+                        <Heart className="w-3.5 h-3.5" />
+                      </div>
+                      <div className="space-y-0.5">
+                        <div className="text-xs font-bold text-slate-200">Healthcare / Medical VA</div>
+                        <div className="text-[10px] text-slate-400">HIPAA compliant records, patient scheduling, and system audits.</div>
+                      </div>
+                    </div>
+
+                    {/* Specialty 2: Executive Assistant (EA) */}
+                    <div className="bg-slate-950/40 border border-slate-800/60 p-2.5 rounded-2xl flex items-start gap-3">
+                      <div className="p-1.5 bg-teal-500/10 rounded-lg text-teal-400 shrink-0">
+                        <Users className="w-3.5 h-3.5" />
+                      </div>
+                      <div className="space-y-0.5">
+                        <div className="text-xs font-bold text-slate-200">Executive Assistant (EA)</div>
+                        <div className="text-[10px] text-slate-400">Conflict-free booking, proactive email filters, and direct coordination.</div>
+                      </div>
+                    </div>
+
+                    {/* Specialty 3: Operations VA */}
+                    <div className="bg-slate-950/40 border border-slate-800/60 p-2.5 rounded-2xl flex items-start gap-3">
+                      <div className="p-1.5 bg-teal-500/10 rounded-lg text-teal-400 shrink-0">
+                        <Settings className="w-3.5 h-3.5" />
+                      </div>
+                      <div className="space-y-0.5">
+                        <div className="text-xs font-bold text-slate-200">Operations VA</div>
+                        <div className="text-[10px] text-slate-400">Task optimization, file system cleanups, and administrative SOPs.</div>
+                      </div>
+                    </div>
+
+                    {/* Specialty 4: Social Media VA */}
+                    <div className="bg-slate-950/40 border border-slate-800/60 p-2.5 rounded-2xl flex items-start gap-3">
+                      <div className="p-1.5 bg-teal-500/10 rounded-lg text-teal-400 shrink-0">
+                        <Share2 className="w-3.5 h-3.5" />
+                      </div>
+                      <div className="space-y-0.5">
+                        <div className="text-xs font-bold text-slate-200">Social Media VA</div>
+                        <div className="text-[10px] text-slate-400">Asset cataloging, calendar tracking, page updates, and queue syncs.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Visual bottom bar */}
+              <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-[10px] font-mono text-slate-500">
+                <span>US HOURS PREPARED</span>
+                <span className="text-teal-400 font-bold bg-teal-400/5 px-2 py-0.5 rounded">NDA PROTECTED</span>
+              </div>
+
+            </div>
           </motion.div>
 
         </div>
