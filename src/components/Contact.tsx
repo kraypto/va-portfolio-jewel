@@ -56,7 +56,7 @@ export default function Contact() {
     setIsSubmitting(true);
     setSubmitError(null);
 
-    // Using Web3Forms public API to deliver submissions directly to target email: santiagojewelm@gmail.com
+    // Using Web3Forms public API to deliver submissions directly to target email: jancodrey.delosreyes@gmail.com
     // Fallback key: '8c13f639-6e3e-43f0-bb53-6ecba592df87' (or direct configuration instructions)
     const accessKey = (import.meta as any).env.VITE_WEB3FORMS_KEY || '8c13f639-6e3e-43f0-bb53-6ecba592df87';
 
@@ -208,7 +208,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-slate-900">Direct Business Email</h4>
-                      <p className="text-[10px] text-teal-600 select-all group-hover:text-teal-700 transition-colors">jancodrey.delosreyes@gmail.com</p>
+                      <p className="text-[10px] text-teal-600 select-all group-hover:text-teal-700 transition-colors">santiagojewelm@gmail.com</p>
                     </div>
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-450 group-hover:text-teal-600 transition-colors" />
